@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Workspace/Algorithms-With-C/analysis_of_algorithms/l_01_recursion.c
+stdio.h
+-
+list.h
+D:/Workspace/Algorithms-With-C/analysis_of_algorithms/list.h
+
+D:/Workspace/Algorithms-With-C/analysis_of_algorithms/list.h
+
