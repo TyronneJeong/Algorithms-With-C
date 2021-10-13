@@ -76,6 +76,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Workspace/Algorithms-With-C/analysis_of_algorithms/l_00_memory.c">
+			<Option target="Algorithms_With_C"/>
+		</Unit>
 		<Unit filename="D:/Workspace/Algorithms-With-C/analysis_of_algorithms/l_01_recursion.c">
 			<Option target="Algorithms_With_C"/>
 		</Unit>

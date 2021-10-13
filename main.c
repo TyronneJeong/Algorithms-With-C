@@ -10,8 +10,9 @@ void student_func(){
 } /* example code */
 
 void analysis_of_algorithms(){
-    l_01_recursion();
-    l_02_powerset();
+    l_00_memory();
+//    l_01_recursion();
+//    l_02_powerset();
 } /* analysis_of_algorithms */
 
 int main() {

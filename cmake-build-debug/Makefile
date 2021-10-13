@@ -128,6 +128,30 @@ Algorithms_With_C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/build
 .PHONY : Algorithms_With_C/fast
 
+analysis_of_algorithms/l_00_memory.obj: analysis_of_algorithms/l_00_memory.c.obj
+.PHONY : analysis_of_algorithms/l_00_memory.obj
+
+# target to build an object file
+analysis_of_algorithms/l_00_memory.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_00_memory.c.obj
+.PHONY : analysis_of_algorithms/l_00_memory.c.obj
+
+analysis_of_algorithms/l_00_memory.i: analysis_of_algorithms/l_00_memory.c.i
+.PHONY : analysis_of_algorithms/l_00_memory.i
+
+# target to preprocess a source file
+analysis_of_algorithms/l_00_memory.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_00_memory.c.i
+.PHONY : analysis_of_algorithms/l_00_memory.c.i
+
+analysis_of_algorithms/l_00_memory.s: analysis_of_algorithms/l_00_memory.c.s
+.PHONY : analysis_of_algorithms/l_00_memory.s
+
+# target to generate assembly for a file
+analysis_of_algorithms/l_00_memory.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_00_memory.c.s
+.PHONY : analysis_of_algorithms/l_00_memory.c.s
+
 analysis_of_algorithms/l_01_recursion.obj: analysis_of_algorithms/l_01_recursion.c.obj
 .PHONY : analysis_of_algorithms/l_01_recursion.obj
 
@@ -233,6 +257,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Algorithms_With_C
+	@echo ... analysis_of_algorithms/l_00_memory.obj
+	@echo ... analysis_of_algorithms/l_00_memory.i
+	@echo ... analysis_of_algorithms/l_00_memory.s
 	@echo ... analysis_of_algorithms/l_01_recursion.obj
 	@echo ... analysis_of_algorithms/l_01_recursion.i
 	@echo ... analysis_of_algorithms/l_01_recursion.s

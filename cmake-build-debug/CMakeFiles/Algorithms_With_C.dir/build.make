@@ -91,9 +91,22 @@ CMakeFiles/Algorithms_With_C.dir/example/student.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Algorithms_With_C.dir/example/student.c.s"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Workspace\Algorithms-With-C\example\student.c -o CMakeFiles\Algorithms_With_C.dir\example\student.c.s
 
+CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_00_memory.c.obj: CMakeFiles/Algorithms_With_C.dir/flags.make
+CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_00_memory.c.obj: ../analysis_of_algorithms/l_00_memory.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Workspace\Algorithms-With-C\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_00_memory.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Algorithms_With_C.dir\analysis_of_algorithms\l_00_memory.c.obj -c D:\Workspace\Algorithms-With-C\analysis_of_algorithms\l_00_memory.c
+
+CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_00_memory.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_00_memory.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Workspace\Algorithms-With-C\analysis_of_algorithms\l_00_memory.c > CMakeFiles\Algorithms_With_C.dir\analysis_of_algorithms\l_00_memory.c.i
+
+CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_00_memory.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_00_memory.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Workspace\Algorithms-With-C\analysis_of_algorithms\l_00_memory.c -o CMakeFiles\Algorithms_With_C.dir\analysis_of_algorithms\l_00_memory.c.s
+
 CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_01_recursion.c.obj: CMakeFiles/Algorithms_With_C.dir/flags.make
 CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_01_recursion.c.obj: ../analysis_of_algorithms/l_01_recursion.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Workspace\Algorithms-With-C\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_01_recursion.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Workspace\Algorithms-With-C\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_01_recursion.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Algorithms_With_C.dir\analysis_of_algorithms\l_01_recursion.c.obj -c D:\Workspace\Algorithms-With-C\analysis_of_algorithms\l_01_recursion.c
 
 CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_01_recursion.c.i: cmake_force
@@ -106,7 +119,7 @@ CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_01_recursion.c.s: cmak
 
 CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_02_powerset.c.obj: CMakeFiles/Algorithms_With_C.dir/flags.make
 CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_02_powerset.c.obj: ../analysis_of_algorithms/l_02_powerset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Workspace\Algorithms-With-C\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_02_powerset.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Workspace\Algorithms-With-C\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_02_powerset.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Algorithms_With_C.dir\analysis_of_algorithms\l_02_powerset.c.obj -c D:\Workspace\Algorithms-With-C\analysis_of_algorithms\l_02_powerset.c
 
 CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_02_powerset.c.i: cmake_force
@@ -121,6 +134,7 @@ CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_02_powerset.c.s: cmake
 Algorithms_With_C_OBJECTS = \
 "CMakeFiles/Algorithms_With_C.dir/main.c.obj" \
 "CMakeFiles/Algorithms_With_C.dir/example/student.c.obj" \
+"CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_00_memory.c.obj" \
 "CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_01_recursion.c.obj" \
 "CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_02_powerset.c.obj"
 
@@ -129,13 +143,14 @@ Algorithms_With_C_EXTERNAL_OBJECTS =
 
 Algorithms_With_C.exe: CMakeFiles/Algorithms_With_C.dir/main.c.obj
 Algorithms_With_C.exe: CMakeFiles/Algorithms_With_C.dir/example/student.c.obj
+Algorithms_With_C.exe: CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_00_memory.c.obj
 Algorithms_With_C.exe: CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_01_recursion.c.obj
 Algorithms_With_C.exe: CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_02_powerset.c.obj
 Algorithms_With_C.exe: CMakeFiles/Algorithms_With_C.dir/build.make
 Algorithms_With_C.exe: CMakeFiles/Algorithms_With_C.dir/linklibs.rsp
 Algorithms_With_C.exe: CMakeFiles/Algorithms_With_C.dir/objects1.rsp
 Algorithms_With_C.exe: CMakeFiles/Algorithms_With_C.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Workspace\Algorithms-With-C\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable Algorithms_With_C.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Workspace\Algorithms-With-C\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable Algorithms_With_C.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Algorithms_With_C.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -11,6 +11,7 @@ add_executable(Algorithms_With_C
 
         ## Analysis of Algorithms
         analysis_of_algorithms/list.h
+        analysis_of_algorithms/l_00_memory.c
         analysis_of_algorithms/l_01_recursion.c
         analysis_of_algorithms/l_02_powerset.c
 

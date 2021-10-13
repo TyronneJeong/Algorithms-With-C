@@ -6,8 +6,10 @@
 
 #IncludeRegexTransform: 
 
-D:/Workspace/Algorithms-With-C/analysis_of_algorithms/l_01_recursion.c
+D:/Workspace/Algorithms-With-C/analysis_of_algorithms/l_00_memory.c
 stdio.h
+-
+stdlib.h
 -
 list.h
 D:/Workspace/Algorithms-With-C/analysis_of_algorithms/list.h
