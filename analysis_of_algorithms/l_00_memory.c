@@ -41,7 +41,7 @@
  *    - 높은 주소에서 낮은 주소공간으로 데이터가 저장되며 LIFO(last in first out) 구조를 따른다.
  *    - 함수 호출에 필요한 데이터가 저장되고 그 데이터를 stack frame 이라고 부른다.
  *    - stack frame 이 stack segment 에 저장되며, stack frame 은 automatic 변수와 임시변수, 함수 리턴시 돌아갈 주소값을 포함하고 있다.
- * */
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include "list.h"

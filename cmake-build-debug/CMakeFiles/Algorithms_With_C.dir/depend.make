@@ -4,11 +4,17 @@
 CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_00_memory.c.obj: \
  ../analysis_of_algorithms/l_00_memory.c \
  ../analysis_of_algorithms/list.h
-CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_01_recursion.c.obj: \
- ../analysis_of_algorithms/l_01_recursion.c \
+CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_01_what_is_recursion.c.obj: \
+ ../analysis_of_algorithms/l_01_what_is_recursion.c \
  ../analysis_of_algorithms/list.h
-CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_02_powerset.c.obj: \
- ../analysis_of_algorithms/l_02_powerset.c \
+CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_02_recursive_thinking.c.obj: \
+ ../analysis_of_algorithms/l_02_recursive_thinking.c \
+ ../analysis_of_algorithms/list.h
+CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_03_designing_recursion.c.obj: \
+ ../analysis_of_algorithms/l_03_designing_recursion.c \
+ ../analysis_of_algorithms/list.h
+CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_04_maze.c.obj: \
+ ../analysis_of_algorithms/l_04_maze.c \
  ../analysis_of_algorithms/list.h
 CMakeFiles/Algorithms_With_C.dir/example/student.c.obj: \
  ../example/student.c \

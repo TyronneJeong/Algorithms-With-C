@@ -10,9 +10,11 @@ void student_func(){
 } /* example code */
 
 void analysis_of_algorithms(){
-    l_00_memory();
-//    l_01_recursion();
-//    l_02_powerset();
+//    l_00_memory();
+//    l_01_what_is_recursion();
+    l_02_recursive_thinking();
+//    l_03_designing_recursion();
+//    l_04_maze();
 } /* analysis_of_algorithms */
 
 int main() {

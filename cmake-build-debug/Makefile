@@ -152,53 +152,101 @@ analysis_of_algorithms/l_00_memory.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_00_memory.c.s
 .PHONY : analysis_of_algorithms/l_00_memory.c.s
 
-analysis_of_algorithms/l_01_recursion.obj: analysis_of_algorithms/l_01_recursion.c.obj
-.PHONY : analysis_of_algorithms/l_01_recursion.obj
+analysis_of_algorithms/l_01_what_is_recursion.obj: analysis_of_algorithms/l_01_what_is_recursion.c.obj
+.PHONY : analysis_of_algorithms/l_01_what_is_recursion.obj
 
 # target to build an object file
-analysis_of_algorithms/l_01_recursion.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_01_recursion.c.obj
-.PHONY : analysis_of_algorithms/l_01_recursion.c.obj
+analysis_of_algorithms/l_01_what_is_recursion.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_01_what_is_recursion.c.obj
+.PHONY : analysis_of_algorithms/l_01_what_is_recursion.c.obj
 
-analysis_of_algorithms/l_01_recursion.i: analysis_of_algorithms/l_01_recursion.c.i
-.PHONY : analysis_of_algorithms/l_01_recursion.i
+analysis_of_algorithms/l_01_what_is_recursion.i: analysis_of_algorithms/l_01_what_is_recursion.c.i
+.PHONY : analysis_of_algorithms/l_01_what_is_recursion.i
 
 # target to preprocess a source file
-analysis_of_algorithms/l_01_recursion.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_01_recursion.c.i
-.PHONY : analysis_of_algorithms/l_01_recursion.c.i
+analysis_of_algorithms/l_01_what_is_recursion.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_01_what_is_recursion.c.i
+.PHONY : analysis_of_algorithms/l_01_what_is_recursion.c.i
 
-analysis_of_algorithms/l_01_recursion.s: analysis_of_algorithms/l_01_recursion.c.s
-.PHONY : analysis_of_algorithms/l_01_recursion.s
+analysis_of_algorithms/l_01_what_is_recursion.s: analysis_of_algorithms/l_01_what_is_recursion.c.s
+.PHONY : analysis_of_algorithms/l_01_what_is_recursion.s
 
 # target to generate assembly for a file
-analysis_of_algorithms/l_01_recursion.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_01_recursion.c.s
-.PHONY : analysis_of_algorithms/l_01_recursion.c.s
+analysis_of_algorithms/l_01_what_is_recursion.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_01_what_is_recursion.c.s
+.PHONY : analysis_of_algorithms/l_01_what_is_recursion.c.s
 
-analysis_of_algorithms/l_02_powerset.obj: analysis_of_algorithms/l_02_powerset.c.obj
-.PHONY : analysis_of_algorithms/l_02_powerset.obj
+analysis_of_algorithms/l_02_recursive_thinking.obj: analysis_of_algorithms/l_02_recursive_thinking.c.obj
+.PHONY : analysis_of_algorithms/l_02_recursive_thinking.obj
 
 # target to build an object file
-analysis_of_algorithms/l_02_powerset.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_02_powerset.c.obj
-.PHONY : analysis_of_algorithms/l_02_powerset.c.obj
+analysis_of_algorithms/l_02_recursive_thinking.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_02_recursive_thinking.c.obj
+.PHONY : analysis_of_algorithms/l_02_recursive_thinking.c.obj
 
-analysis_of_algorithms/l_02_powerset.i: analysis_of_algorithms/l_02_powerset.c.i
-.PHONY : analysis_of_algorithms/l_02_powerset.i
+analysis_of_algorithms/l_02_recursive_thinking.i: analysis_of_algorithms/l_02_recursive_thinking.c.i
+.PHONY : analysis_of_algorithms/l_02_recursive_thinking.i
 
 # target to preprocess a source file
-analysis_of_algorithms/l_02_powerset.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_02_powerset.c.i
-.PHONY : analysis_of_algorithms/l_02_powerset.c.i
+analysis_of_algorithms/l_02_recursive_thinking.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_02_recursive_thinking.c.i
+.PHONY : analysis_of_algorithms/l_02_recursive_thinking.c.i
 
-analysis_of_algorithms/l_02_powerset.s: analysis_of_algorithms/l_02_powerset.c.s
-.PHONY : analysis_of_algorithms/l_02_powerset.s
+analysis_of_algorithms/l_02_recursive_thinking.s: analysis_of_algorithms/l_02_recursive_thinking.c.s
+.PHONY : analysis_of_algorithms/l_02_recursive_thinking.s
 
 # target to generate assembly for a file
-analysis_of_algorithms/l_02_powerset.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_02_powerset.c.s
-.PHONY : analysis_of_algorithms/l_02_powerset.c.s
+analysis_of_algorithms/l_02_recursive_thinking.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_02_recursive_thinking.c.s
+.PHONY : analysis_of_algorithms/l_02_recursive_thinking.c.s
+
+analysis_of_algorithms/l_03_designing_recursion.obj: analysis_of_algorithms/l_03_designing_recursion.c.obj
+.PHONY : analysis_of_algorithms/l_03_designing_recursion.obj
+
+# target to build an object file
+analysis_of_algorithms/l_03_designing_recursion.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_03_designing_recursion.c.obj
+.PHONY : analysis_of_algorithms/l_03_designing_recursion.c.obj
+
+analysis_of_algorithms/l_03_designing_recursion.i: analysis_of_algorithms/l_03_designing_recursion.c.i
+.PHONY : analysis_of_algorithms/l_03_designing_recursion.i
+
+# target to preprocess a source file
+analysis_of_algorithms/l_03_designing_recursion.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_03_designing_recursion.c.i
+.PHONY : analysis_of_algorithms/l_03_designing_recursion.c.i
+
+analysis_of_algorithms/l_03_designing_recursion.s: analysis_of_algorithms/l_03_designing_recursion.c.s
+.PHONY : analysis_of_algorithms/l_03_designing_recursion.s
+
+# target to generate assembly for a file
+analysis_of_algorithms/l_03_designing_recursion.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_03_designing_recursion.c.s
+.PHONY : analysis_of_algorithms/l_03_designing_recursion.c.s
+
+analysis_of_algorithms/l_04_maze.obj: analysis_of_algorithms/l_04_maze.c.obj
+.PHONY : analysis_of_algorithms/l_04_maze.obj
+
+# target to build an object file
+analysis_of_algorithms/l_04_maze.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_04_maze.c.obj
+.PHONY : analysis_of_algorithms/l_04_maze.c.obj
+
+analysis_of_algorithms/l_04_maze.i: analysis_of_algorithms/l_04_maze.c.i
+.PHONY : analysis_of_algorithms/l_04_maze.i
+
+# target to preprocess a source file
+analysis_of_algorithms/l_04_maze.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_04_maze.c.i
+.PHONY : analysis_of_algorithms/l_04_maze.c.i
+
+analysis_of_algorithms/l_04_maze.s: analysis_of_algorithms/l_04_maze.c.s
+.PHONY : analysis_of_algorithms/l_04_maze.s
+
+# target to generate assembly for a file
+analysis_of_algorithms/l_04_maze.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_04_maze.c.s
+.PHONY : analysis_of_algorithms/l_04_maze.c.s
 
 example/student.obj: example/student.c.obj
 .PHONY : example/student.obj
@@ -260,12 +308,18 @@ help:
 	@echo ... analysis_of_algorithms/l_00_memory.obj
 	@echo ... analysis_of_algorithms/l_00_memory.i
 	@echo ... analysis_of_algorithms/l_00_memory.s
-	@echo ... analysis_of_algorithms/l_01_recursion.obj
-	@echo ... analysis_of_algorithms/l_01_recursion.i
-	@echo ... analysis_of_algorithms/l_01_recursion.s
-	@echo ... analysis_of_algorithms/l_02_powerset.obj
-	@echo ... analysis_of_algorithms/l_02_powerset.i
-	@echo ... analysis_of_algorithms/l_02_powerset.s
+	@echo ... analysis_of_algorithms/l_01_what_is_recursion.obj
+	@echo ... analysis_of_algorithms/l_01_what_is_recursion.i
+	@echo ... analysis_of_algorithms/l_01_what_is_recursion.s
+	@echo ... analysis_of_algorithms/l_02_recursive_thinking.obj
+	@echo ... analysis_of_algorithms/l_02_recursive_thinking.i
+	@echo ... analysis_of_algorithms/l_02_recursive_thinking.s
+	@echo ... analysis_of_algorithms/l_03_designing_recursion.obj
+	@echo ... analysis_of_algorithms/l_03_designing_recursion.i
+	@echo ... analysis_of_algorithms/l_03_designing_recursion.s
+	@echo ... analysis_of_algorithms/l_04_maze.obj
+	@echo ... analysis_of_algorithms/l_04_maze.i
+	@echo ... analysis_of_algorithms/l_04_maze.s
 	@echo ... example/student.obj
 	@echo ... example/student.i
 	@echo ... example/student.s

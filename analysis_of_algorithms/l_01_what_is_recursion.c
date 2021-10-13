@@ -7,7 +7,7 @@ int tail_rec_factorial(int n, int d); // 꼬리재귀 형태의 팩토리얼
 int fibonacci(int n);   // 피보나치수열
 int gcd(int m, int n);  // 최대공약수-유클리드호제법
 
-void l_01_recursion(){
+void l_01_what_is_recursion(){
     int result = 0;
     result = recursive(10);
     printf("recursive Result : %d\n", result);
@@ -16,12 +16,12 @@ void l_01_recursion(){
     printf("factorial Result : %d\n", result);
 
     result = tail_rec_factorial(10, 1);
-    printf("tail_recursive_factorial Result : %d\n", result);
+    printf("tail_rec_factorial Result : %d\n", result);
 
     result = fibonacci(40);
     printf("fibonacci Result : %d\n", result);
 
-    result = gcd(46, 23);
+    result = gcd(12, 7);
     printf("gcd Result : %d\n", result);
 }
 
@@ -34,7 +34,7 @@ void l_01_recursion(){
  * - Process finished with exit code -1073741571 (0xC00000FD)
  * 함수 호출이 한계점에 이르면 Stack Overflow 가 발생되므로
  * 이를 꼬리재귀 형태로 변환하여 Stack Overflow 를 방지 할 수 있다.
- * */
+ */
 int recursive(int n){
     if (n <= 0){ // base case (종료식)
         return 0;
@@ -48,7 +48,7 @@ int recursive(int n){
  * [factorial]
  * desc : 입력된 정수 보다 작은 모든 양의 정수의 곱
  * 재귀 호출시 반복 되는 호출 정보는 스택 프레임에 저장된다.
- * */
+ */
 int factorial(int n){
     if (n == 0){
         return 1;
@@ -61,7 +61,7 @@ int factorial(int n){
  * [tail_rec_factorial]
  * desc : 꼬리재귀 형태의 팩토리얼
  * 호출 되는 함수가 스텍 프레임에서 반환 된 후 새롭게 함수 호출이 일어난다.
- * */
+ */
 int tail_rec_factorial(int n, int d){
     if (n <= 0){
         return d;
@@ -76,7 +76,7 @@ int tail_rec_factorial(int n, int d){
  * 개월 후 전체 토끼쌍의 수를 나열한 수열
  * (suppose 토끼는 죽지 않는다, 2개월이상된 토끼는 번식이 가능하다)
  * ex. [3개월 : 1 + 1 = 2], [4개월 : 1 + 2 = 3], [5개월 : 2 + 3 = 5], [6개월 : 3 + 5 = 8]
- * */
+ */
 int fibonacci(int n){
     if (n < 2){
         return n;
@@ -95,8 +95,16 @@ int fibonacci(int n){
  * [GCD(Greatest Common Divisor)
  * desc : 최대 공약수 유클리드 호제법 (Euclidean Algorithm)]
  * 유클리드 호제법이란?
- * 두 수를 나누어
- * */
+ * - 두 수가 서로 상대방 수로 나누어 원하는 결과를 얻는 알고리즘 양식.
+ *
+ * [약수] divisor : 어떤 수로 정수가 나누어 떨어지는지를 이르는 말.
+ * 입력 받은 두 정수는 각각 다른 종류의 나누어 떨어지는 정수가 존재한다.
+ * 이 정수들 중 서로 일치하는 최대 공약수를 구하여라
+ *
+ * [특징]
+ * 두 수가 서로 정수로 나누어 떨어지는 경우 작은 수가 최대공약수 이다.
+ * 두 수가 서로 정수로 나누어 떨어지지 않는 경우 나머지 값을 이용해 최대공약수를 다시 산출 할 수 있다.
+ */
 int gcd(int m, int n) {
     if(m < n) {
         int tmp = m; m = n; n = tmp; //swap m and n
