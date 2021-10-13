@@ -3,6 +3,13 @@
 #include <string.h>
 #include "list.h"
 
+char* substr(char *str, int position, int length); // 문자열 부분 잘라내기
+int  length(char *str);           // 입력 문자열의 길이측정
+void print_str_token(char *str);  // 문자열을 문자 단위로 출력
+void print_reverse_str(char *str);    // 문자열 뒤집어 출력
+void print_int_to_binary(int n);  // 숫자를 2진수로 출력
+int  sum_of_array(int numb[], int start); // 배열에 담긴 숫자들의 합을 리턴
+
 /**
  * [recursion vs iteration]
  * - 모든 순환 함수는 반복문(iteration)으로 변경이 가능하다.
@@ -11,13 +18,6 @@
  * - 순환함수는 함수 호출에 따른 오버헤드가 발생 함(매개변수 전달, 액티베이션 프레임 생성 등)
  * - activation frame is stack frame.
  */
-char* substr(char *str, int position, int length); // 문자열 부분 잘라내기
-int  length(char *str);           // 입력 문자열의 길이측정
-void print_str_token(char *str);  // 문자열을 문자 단위로 출력
-void print_reverse_str(char *str);    // 문자열 뒤집어 출력
-void print_int_to_binary(int n);  // 숫자를 2진수로 출력
-int  sum_of_array(int numb[], int start); // 배열에 담긴 숫자들의 합을 리턴
-
 void l_02_recursive_thinking() {
     char *sample = "sample"; // static memory allocation
     printf("length result : %d\n", length(sample));
