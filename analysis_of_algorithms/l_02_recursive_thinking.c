@@ -8,7 +8,7 @@ int     length(char *str);                              /* 입력 문자열의 �
 void    print_str_token(char *str);                     /* 문자열을 문자 단위로 출력           */
 void    print_reverse_str(char *str);                   /* 문자열 뒤집어 출력                 */
 void    print_int_to_binary(int n);                     /* 숫자를 2진수로 출력                */
-int     sum_of_array(int numb[], int start);            /* 배열에 담긴 숫자들의 합을 리턴       */
+int     sum_of_array(int numb[], int begin);            /* 배열에 담긴 숫자들의 합을 리턴       */
 
 /*
  * Function     : l_02_recursive_thinking
@@ -116,16 +116,16 @@ void print_int_to_binary(int n){
  * Function     : sum_of_array
  * Description  : 입력 받은 배열 내 저장된 모든 정수들의 합을 리턴한다
  * Calls        : l_02_recursive_thinking.c/l_02_recursive_thinking
- * Input        : int numb[], int start
+ * Input        : int numb[], int begin
  * Output       : int
  * Return       : N/A
  * Others       : 배열과 재귀호출시 참조할 배열 인덱스 값을 같이 전달한다.
  */
-int sum_of_array(int numb[], int start){
-    if(numb[start] == NULL){
+int sum_of_array(int numb[], int begin){
+    if(numb[begin] == NULL){
         return 0;
     } else {
-        return numb[start] + sum_of_array(numb, start+1);
+        return numb[begin] + sum_of_array(numb, begin+1);
     }
 }
 
