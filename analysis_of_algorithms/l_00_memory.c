@@ -46,23 +46,32 @@
 #include <stdlib.h>
 #include "list.h"
 
-const int CONST_VALUE = 30;      // constant value declaration
-static int static_variable = 70; // initialized static variable declaration
-int g_uninitial;                 // uninitialized global variable declaration
-int g_initial = 30;              // initialized global variable declaration
-int function();                  // function declaration
+const int CONST_VALUE = 30;         /* constant value declaration                  */
+static int static_variable = 70;    /* initialized static variable declaration     */
+int g_uninitial;                    /* uninitialized global variable declaration   */
+int g_initial = 30;                 /* initialized global variable declaration     */
+int function();                     /* function declaration                        */
 int function() {
     return 20;
 }
 
+/*
+ * Function     : l_00_memory
+ * Description  : main function of memory part
+ * Calls        : main.c/analysis_of_algorithms()
+ * Input        : void
+ * Output       : void
+ * Return       : N/A
+ * Others       : N/A
+ */
 void l_00_memory() {
-    int local_variable1 = 30;  // local 1 variable (initialized)
-    int local_variable2;       // local 2 variable (unintialized)
+    int local_variable1 = 30;       /* local 1 variable (initialized)    */
+    int local_variable2;            /* local 2 variable (unintialized)   */
 
     printf("input any number : ");
     scanf(" %d", &local_variable2);
 
-    char *arr = malloc(sizeof(char) * 10);  // dynamic memory allocation
+    char *arr = malloc(sizeof(char) * 10);  /* dynamic memory allocation    */
 
     /* print pointer address info */
     printf("\n");
