@@ -9,7 +9,7 @@
 D:/Workspace/Algorithms-With-C/analysis_of_algorithms/l_03_designing_recursion.c
 stdio.h
 -
-math.h
+string.h
 -
 list.h
 D:/Workspace/Algorithms-With-C/analysis_of_algorithms/list.h

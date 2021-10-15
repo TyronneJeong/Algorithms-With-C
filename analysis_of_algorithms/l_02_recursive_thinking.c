@@ -3,7 +3,7 @@
 #include <string.h>
 #include "list.h"
 
-char*   substr(char *str, int position, int length);    /* 문자열 부분 잘라내기                */
+char*   substr(char *str, int position, int length);    /* 문자열 부분 잘라내기               */
 int     length(char *str);                              /* 입력 문자열의 길이측정              */
 void    print_str_token(char *str);                     /* 문자열을 문자 단위로 출력           */
 void    print_reverse_str(char *str);                   /* 문자열 뒤집어 출력                 */
@@ -44,13 +44,16 @@ void l_02_recursive_thinking() {
  * Input        : char *str
  * Output       : int
  * Return       : N/A
- * Others       : substr함수의 재귀형태로 리턴되는 동적 할당 변수는 해제가 필요한지 확인필요
+ * Others       : N/A
  */
 int length(char *str){
     if(str != NULL && str[0] == '\0') {
         return 0;
     } else {
-        return 1 + length(substr(str, 1, (strlen(str)-1)));
+        char *rtn_Str = substr(str, 1, (strlen(str)-1));
+        int string_length = 1 + length(rtn_Str);
+        free(rtn_Str);
+        return string_length;
     }
 }
 
@@ -141,6 +144,8 @@ int sum_of_array(int numb[], int begin){
  *                C의 경우는 void* 포인터는 대입자료형으로 자동 케스팅 되므로 별도의 캐스팅
  *                (char*)malloc(size) 은 생략 가능하다.
  *                동적으로 할당된 메모리는 사용후 반드시 메모리 해제(free)가 필요하다.
+ *                해제 되지 않은 동적 메모리 공간은 프로그램이 종료될때까지 재사용이 불가능하다.
+ *                이때 해제 되지 않은채 남은 주소 공간을 허상참조(dangling reference) 라고 한다.
  */
 char* substr(char *str, int position, int length) {
     char *p;
@@ -170,7 +175,7 @@ char* substr(char *str, int position, int length) {
     // heap space 할당량을 초과하거나 메모리 할당이 실패한 경우 malloc 은 NULL 을 리턴한다.
     if(p == NULL) {
         printf("unable to allocate memoey. \n");
-        exit(1);
+        exit(EXIT_FAILURE); // EXIT_FAILURE) : 1
     }
 
     // char 하나씩 주소 공간에 복사
