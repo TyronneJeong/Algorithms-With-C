@@ -163,112 +163,164 @@ int binary_search(){
     return -1;
 }
 
-
+void print_input_string(char *str){
+    printf("%s\n", str);
+}
 void what_is_pointer(){
-    printf("~~~~~~~~~~~~~~~what_is_pointer begin~~~~~~~~~~~~~~~\n\n");
-    int  int_value = 1;
-    double double_value = 2;
-    char char_value = 'A';
-    char *char_pointer = "ABC";
+    printf("\n|********************************[ variables ]*******************************|");
+    /* [initiate variables] ****************************************************************************/
+    int int_value               = 1;
+    double double_value         = 2;
+    char char_value             = 'A';
+    char *char_pointer          = "ABC";
 
-    /************************************************************************************/
-    printf("int_value       is : %d\n", int_value);
-    printf("double_value    is : %f\n", double_value);
-    printf("char_value      is : %c\n", char_value);
-    printf("char_pointer    is : %s\n", char_pointer); // \0 를 만날떄까지 출력하는건가?
+    /* [print literals] ********************************************************************************/
+    printf("\n");
+    printf("int_value            is : %d\n", int_value);
+    printf("double_value         is : %f\n", double_value);
+    printf("char_value           is : %c\n", char_value);
+    printf("char_pointer         is : %s\n", char_pointer);                     // '\0' 를 만날떄까지 출력하는건가?
 
-    /************************************************************************************/
-    // arrays
+    /* [basic value] ***********************************************************************************/
+    printf("\n");
+    printf("int_value            is : %d\n", int_value);                        // literal of int_value
+    printf("&int_value           is : %d\n", &int_value);                       // address of int_value
+    printf("*int_value           is : not working\n");                          // it is not work. cause, pointer does not knows correct address to get value. pointer is only for use address value.
+    printf("*char_value          is : not working\n");                          // it is not work. cause, pointer does not knows correct address to get value. pointer is only for use address value.
+
+    printf("\n");
+    int_value = 3;
+    printf("set 3 to int_value   is : %d\n", int_value);                        // literal of int_value
+    printf("set 3 to &int_value  is : %d (same address)\n", &int_value);        // nothing change the address of int_value
+
+    printf("\n");
+    int int_value_copy = int_value;                                             // create new variable to save value from int_value
+    printf("int_value_copy       is : %d\n", int_value_copy);                   // int_value_copy has same value between int_value
+    printf("&int_value_copy      is : %d (diff address)\n", &int_value_copy);   // but, it is not allocated same address to int_value_copy
+
+    printf("\n|*********************************[ arrays ]*********************************|");
+    /* [initiate arrays] *******************************************************************************/
     int int_array[]             = {1, 2, 3, 4, 5};
     double double_array[]       = {1, 2, 3, 4, 5};
     char char_array[]           = {'A', 'B', 'C'};
     char *char_pointer_array[]  = {"ABC", "EFG", "HIJ"};
-    /************************************************************************************/
-    printf("int_value          is : %d\n", int_value);          // literal of int_value
-    printf("&int_value         is : %d\n", &int_value);         // address of int_value
-    // printf("*int_value         is : %d\n", *int_value);      // it is not work. cause, pointer does not knows correct address to get value. pointer is only for use address value.
 
-    printf("\n");
-    int_value = 3;
-    printf("int_value          is : %d\n", int_value);          // literal of int_value
-    printf("&int_value         is : %d\n", &int_value);         // nothing change the address of int_value
-
-    printf("\n");
-    int int_value_copy = int_value;                             // create new variable to save value from int_value
-    printf("int_value_copy     is : %d\n", int_value_copy);     // int_value_copy has same value between int_value
-    printf("&int_value_copy    is : %d\n", &int_value_copy);    // but, it is not allocated same address to int_value_copy
-
-    /************************************************************************************/
-    /* [배열] - 배열 주소는 어떤 모양인지 알아 본다. */
-    /************************************************************************************/
+    /* [address of variables] **************************************************************************/
     /* '*' (pointer) 와  '&' (the address of operator) 의 관계 */
     printf("\n");
-    printf("int_array %%d             is : %d\n", int_array);              // int_array 변수에는 배열의 주소 값이 저장되어 있다.
-    printf("int_array %%p             is : %p\n", int_array);              // 변수 (int_array) 가 할당되어 있는 주소 정보가 출력 된다. (%p 파라미터는 32비트의 경우 16진수 주소 정보 8자리를 출력하는 포맷 형식 이다.)
-    printf("&int_array               is : %p\n", &int_array);             // It returns memory location of the variable.
-    printf("&int_array[0]            is : %p\n", &int_array[0]);          // 변수 (int_array) 가 가리키는 주소 정보와 동일한 주소 정보가 출력 된다.
+    printf("int_array %%d         is : %d\n", int_array);                       // int_array 변수에는 배열의 주소 값이 저장되어 있다.
+    printf("int_array %%p         is : %p\n", int_array);                       // 변수 (int_array) 가 할당되어 있는 주소 정보가 출력 된다. (%p 파라미터는 32비트의 경우 16진수 주소 정보 8자리를 출력하는 포맷 형식 이다.)
+    printf("&int_array           is : %p\n", &int_array);                       // It returns memory location of the variable.
+    printf("&int_array[0]        is : %p\n", &int_array[0]);                    // 변수 (int_array) 가 가리키는 주소 정보와 동일한 주소 정보가 출력 된다.
 
-    printf("\n");
     // %d (10진수) 형식의 정수형 변수 하나를 출력 요청하였으므로. 1이 리턴된다.
-    // 출력 포맷은 기계적인 데이터를 읽어 화면에 나타내고자 하는 자료 형식으로 변환하는 구문이다.
-    printf("*int_array               is : %d\n", *int_array);             // 포인터는 주소 정보에 존재하는 실제 값을 리턴 한다.
-    printf("*&int_array[0]           is : %d\n", *&int_array[0]);         // 변수가 가리키는 곳
+    // 출력 포맷(%d, %f, %c)은 기계적인 데이터를 읽어 화면에 나타내고자 하는 자료 형식으로 변환하는 구문이다.
+    printf("\n");
+    printf("*int_array           is : %d\n", *int_array);                       // 포인터는 주소 정보에 존재하는 실제 값을 리턴 한다.
+    printf("*&int_array[0]       is : %d\n", *&int_array[0]);                   // 변수가 가리키는 곳
 
     printf("\n");
-    printf("*&int_array              is : %d\n", *&int_array);    // 새롭게 가리키는 주소가 가리키는 목적지의 정보를 읽어온다.
-    printf("&*&int_array             is : %d\n", &*&int_array);   // 값이 저장된 주소공간을 가리키는 값 을 포인터로 가리키고 그 주소정보를 다시 확인함
-    printf("&*&*int_array            is : %d\n", &*&*&int_array); // 값이 저장된 주소공간을 가리키는 값 을 포인터로 가리키고 그 주소공간을 가리키는 값 을 포인터로 가리키고 그 주소정보를 다시 확인함
+    printf("*&int_array          is : %d\n", *&int_array);                      // 새롭게 가리키는 주소가 가리키는 목적지의 정보를 읽어온다.
+    printf("&*&int_array         is : %d\n", &*&int_array);                     // 값이 저장된 주소공간을 가리키는 값 을 포인터로 가리키고 그 주소정보를 다시 확인함
+    printf("&*&*int_array        is : %d\n", &*&*&int_array);                   // 값이 저장된 주소공간을 가리키는 값 을 포인터로 가리키고 그 주소공간을 가리키는 값 을 포인터로 가리키고 그 주소정보를 다시 확인함
 
-    /************************************************************************************/
-    /* [배열] - 배열 주소는 어떤 모양인지 알아 본다. */
-    /************************************************************************************/
-    // index 는 char* 과 다르게 end marker 가 없다
+    printf("\n|******************************[ array cursor ]******************************|");
+    /* [size of variables] *****************************************************************************/
+    printf("\n");
+    printf("int    size          is : %d\n", sizeof(int));                      // int 형 자료의 크기 4byte
+    printf("double size          is : %d\n", sizeof(double));                   // double 형 자료의 크기 8byte
+    printf("char*  size          is : %d\n", sizeof(char*));                    // char 형 자료의 크기 4byte
 
     printf("\n");
-    printf("int    size is : %d\n", sizeof(int));       // int 형 자료의 크기 4byte
-    printf("double size is : %d\n", sizeof(double));    // double 형 자료의 크기 8byte
-    printf("char*  size is : %d\n", sizeof(char*));     // char 형 자료의 크기 4byte
+    printf("int                  is : %d, %p\n", (int*)1         , (int*)1);
+    printf("double               is : %d, %p\n", (double*)1      , (double*)1);
+    printf("char                 is : %d, %p\n", sizeof(char)    , sizeof(char)); // TODO ? 왜 char 만 다르지?
+
+    /* [move cursor] ***********************************************************************************/
+    printf("\n");
+    printf("*int_array + 1       is : %d\n", *int_array + 1);                   // 주소값에서의 연산 : 주소공간에서 n * (4byte) 만큼 이동한 위치의 정수 값을 가져온다.
+    printf("*int_array + (int)1  is : %d\n", *int_array + (int)1);              // 캐스팅 타입의 영향은 받지 않는다. 덧셈 연산은 오로지 자료형의 크기에 비례하여 계산된다.
+    printf("*int_array + (int*)1 is : %d\n", *int_array + (int*)1);             // 캐스팅 타입의 영향을 받는 예 : 주소공간에서 (int* = 4이므로) 4 * n * (4byte) 만큼 이동한 위치의 정수 값을 가져온다.
 
     printf("\n");
-    printf("int         is : %d, %p\n", (int*)1         , (int*)1);
-    printf("double      is : %d, %p\n", (double*)1      , (double*)1);
-    printf("char   size is : %d, %p\n", sizeof(char)    , sizeof(char)); // ? 왜 char 만 다르지?
+    printf("*double_array        is : %f\n", double_array);
+    printf("*double_array + 1    is : %f\n", *double_array + 1);                // 주소값에서의 연산 : 주소공간에서 double size(8byte) * n 만큼 이동한 위치의 정수 값을 가져온다.
+
+    printf("\n|*****************************[ double pointer ]*****************************|");
+    /* [pointer variable] ******************************************************************************/
+    printf("\n");
+    int a       = 10;   // int 형 변수 a
+    double b    = 20;   // double 형 변수 b
+    int *p;             // 4 byte pointer variable (포인터 변수의 크기는 자료형에 따라 달라진다.)
+    int **pp;           // double pointer variable
+    double *dp;         // 8 byte pointer variable
+
+    // 포인터 변수에는 기본적으로 주소 값이 들어와야 한다.
+    printf("size of p   >> %d\n", sizeof(p));   // 4 byte 주소 정보
+    printf("size of *p  >> %d\n", sizeof(*p));  // 4 byte int 값
+    printf("size of dp  >> %d\n", sizeof(dp));  // 4 byte 주소 정보
+    printf("size of *dp >> %d\n", sizeof(*dp)); // 8 byte double 값
+
+    /* [서로 다른 크기의 포인터 변수 대입] ******************************************************************/
+    printf("\n");
+    dp = &a; // 4 byte int 형 변수의 주소 값 대입
+    printf("value of *dp >> %d\n", *dp); // 4 byte int 로 출력시 정상 값 출력
+    printf("value of *dp >> %f\n", *dp); // 8 byte double 로 출력시 0 리턴
 
     printf("\n");
-    printf("*int_array + 1                      is : %d\n", *int_array + 1);            // 주소값에서의 연산 : 주소공간에서 n * (4byte) 만큼 이동한 위치의 정수 값을 가져온다.
-    printf("*int_array + (int)1                 is : %d\n", *int_array + (int)1);       // 캐스팅 타입의 영향은 받지 않는다. 덧셈 연산은 오로지 자료형의 크기에 비례하여 계산된다.
-    printf("*int_array + (int*)1                is : %d\n", *int_array + (int*)1);      // 캐스팅 타입의 영향을 받는 예 : 주소공간에서 (int* = 4이므로) 4 * n * (4byte) 만큼 이동한 위치의 정수 값을 가져온다.
+    dp = &b; // 8 byte double 형 변수의 주소 값 대입
+    printf("value of *dp >> %d\n", *dp); // 4 byte int 로 출력시 0 리턴
+    printf("value of *dp >> %f\n", *dp); // 8 byte double 로 출력시 정상 값 출력
+
+    /* [**] *******************************************************************************************/
+    p  = &a; // p  --> a
+    pp = &p; // pp --> p --> a
 
     printf("\n");
-    printf("*double_array                       is : %f\n", double_array);
-    printf("*double_array + (double_array)1     is : %f\n", *double_array + 1);         // 주소값에서의 연산 : 주소공간에서 double size(8byte) * n 만큼 이동한 위치의 정수 값을 가져온다.
+    printf("value   stored a     is : %d\n",    a);  // a    == 10
+    printf("value   stored at p  is : %d\n",   *p);  // *p   == a (10)
+    printf("value   stored at pp is : %d\n", **pp);  // **pp == a (10)
 
     printf("\n");
-    /************************************************************************************/
+    printf("value   stored a     is : %d\n",    a);  // a  == 10
+    printf("address of a         is : %p\n",   &a);  // &a == Ø
 
-//    printf("int_array          is : %d\n", *int_array);     // 주소공간이 가르키는 곳에 있는 Literal 을 읽어온다.
-//    printf("int_array          is : %d\n", *&int_array);    // 새롭게 가리키는 주소가 가리키는 목적지의 정보를 읽어온다.
-//    printf("int_array          is : %d\n", **&int_array);   // *&int_array가 가리키는 장소. 즉,  int_array 의 값을 읽어온다. (*int_array 와 동일)
-//    printf("int_array          is : %d\n", **&*&int_array); // **&int_array 과 동일
-//
-//    printf("\n");
-//    // int 자료형 index 하나가 증가한 주소 값이 리턴된다.
-//    printf("int_array          is : %d\n", int_array+1); // 자료형(int-4byte) 만큼 증가한 주소공간으로 커서이동
-//    printf("int_array_addr     is : %d\n", &int_array+1);//
-//
-//    printf("\n");
-//    printf("int_array          is : %d\n", int_array+2);
-//    printf("int_array_addr     is : %d\n", &int_array+2);
-//
-//    printf("\n");
-//    printf("int_array          is : %x\n", int_array);
-//    printf("int_array          is : %p\n", int_array);
-//    printf("\n\n");
+    printf("\n");
+    printf("address stored at p  is : %p\n",    p);  // p  == &a
+    printf("value   stored at p  is : %d\n",   *p);  // *p == a (10)
 
-//    printf("long_array         is : %p\n", long_array);
-//    printf("char_array         is : %p\n", char_array);
-//    printf("char_pointer_array is : %p\n", char_pointer_array); // 포인터의 경우 값 전체를 리턴?
+    printf("\n");
+    printf("address of p         is : %p\n",   &p);  // &p == Ø
+    printf("address stored at pp is : %p\n",   pp);  // pp == &p
 
-    // array - 배열변수는 배열 주소의 첫번째 값을 기리킨다.
-    printf("\n\n~~~~~~~~~~~~~~~~what_is_pointer end~~~~~~~~~~~~~~~~\n\n");
+    printf("\n");
+    printf("address of pp        is : %p\n",  &pp);  // &pp  == &p
+    printf("value   stored at pp is : %d\n", **pp);  // **pp == a
+
+    printf("\n|****************************[ function pointer ]****************************|");
+    /* [] ***********************************************************************************/
+    printf("\n");
+    void (*fp)(char* str);      // declare function pointer variable
+    fp = print_input_string;
+    fp("this function has been make by function pointer");
+
+    // 다이나믹한 함수 호출
+
+    printf("\n|****************************[ array pointer ]****************************|");
+    // 다른 배열을 가리키는 포인터
+
+    printf("\n|****************************[ pointer array ]****************************|");
+    // 배열의 저장 데이터가 포인터
+
+    printf("\n|****************************[ const pointer ]****************************|");
+    // 포인터가 가리키는 내용을 변경하지 않겠다.
+    // ex. const int* ptr;
+
+
+    // 포인터가 가리키고 있는 주소 값을 변경하지 않겠다.
+    // ex. char* const ptr;
+
+    printf("\n|****************************[ void pointer ]****************************|");
+    // 순수하게 메모리 주소값만 가진다.
 }
+

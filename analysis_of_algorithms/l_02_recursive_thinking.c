@@ -146,40 +146,31 @@ int sum_of_array(int numb[], int begin){
  *                동적으로 할당된 메모리는 사용후 반드시 메모리 해제(free)가 필요하다.
  *                해제 되지 않은 동적 메모리 공간은 프로그램이 종료될때까지 재사용이 불가능하다.
  *                이때 해제 되지 않은채 남은 주소 공간을 허상참조(dangling reference) 라고 한다.
+ *
+ *                [memset 을 이용한 초기화]
+ *                ex) memset(p, ' ', (sizeof (char) * length) + 1);
+ *                - 파라미터로 전달된 메모리 공간 p를 ' '라는 문자로 length의 길이만큼 채워진다.
+ *                - end marker 를 위하여 입력 문자열의 길이 + 1 만큼을 초기화 해야한다.
+ *
+ *                [calloc 을 이용한 초기화]
+ *                ex) p = calloc((sizeof (char) * length) + 1, sizeof (char));
+ *                malloc 이후 memset 까지를 포함한 동작으로 메모리 할당과 초기화를 동시에 진행한다.
+ *
+ *                [realloc 을 이용한 재할당]
+ *                ex) p = realloc(p, length);
+ *                - 파라미터로 전달된 주소공간 p를 length 라는 크기만큼 재할당 한다.
+ *                - 재할당시 기존 내용은 유지된다.
+ *                - 기존 주소공간을 재사용하지만 재사용이 불가능한 경우 새로운 주소공간을 확보 한다.
  */
 char* substr(char *str, int position, int length) {
     char *p;
     int c = 0;
-
-    // printf("%p\n", p);                           // heap space 주소
-    // printf("%p\n", *p);                          // char 자료형의 주소 (※ *p = malloc 하면 안된다.)
-    // printf("%d\n", sizeof p);                    // 주소공간의 크기
-    // printf("%d\n", sizeof *p);                   // char 타입의 크기
-    // printf("%d\n", sizeof (char));               // char 타입의 크기
-
     p = malloc((sizeof (char) * length) + 1);
-
-    // printf("after malloc : %s\n", p);            // 최초 할당 후 저장된 값 출력
-    // printf("after malloc : %d\n", sizeof p);     // 주소공간의 크기
-    // printf("after malloc : %d\n", sizeof *p);    // char 타입의 크기
-
-    // memset 을 이용한 데이터 filling
-    // memset(p, ' ', 3);                            // 선언된 변수의 길이 2byte + NULL 문자 입력용 1byte 추가 분
-    // printf("after memset : %s\n", p);             // 최초 할당 후 저장된 값 출력
-    // printf("after memset : %p\n", p);             // 기존의 주소정보와 동일함
-
-    // malloc + memset = calloc
-    // p = calloc((sizeof (char) * length) + 1, sizeof (char));
-    // printf("after calloc : %s\n", p);             // 최초 할당 후 저장된 값 출력
-
-    // heap space 할당량을 초과하거나 메모리 할당이 실패한 경우 malloc 은 NULL 을 리턴한다.
-    if(p == NULL) {
+    if(p == NULL) { // heap space 할당량을 초과하거나 메모리 할당이 실패한 경우 malloc 은 NULL 을 리턴한다.
         printf("unable to allocate memoey. \n");
-        exit(EXIT_FAILURE); // EXIT_FAILURE) : 1
+        exit(EXIT_FAILURE); // EXIT_FAILURE : 1
     }
-
-    // char 하나씩 주소 공간에 복사
-    for (c = 0; c < length; c++) {
+    for (c = 0; c < length; c++) { // char 하나씩 주소 공간에 복사
         *(p + c) = *(str + position - 1);
         str++;
     }
