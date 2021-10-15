@@ -174,6 +174,6 @@ char* substr(char *str, int position, int length) {
         *(p + c) = *(str + position - 1);
         str++;
     }
-    *(p + c) = '\0';
+    *(p + c) = '\0'; // end marker
     return p;
 }
