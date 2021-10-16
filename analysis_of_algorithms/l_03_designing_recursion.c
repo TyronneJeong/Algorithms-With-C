@@ -25,18 +25,17 @@ int binary_search(char* str_arr[], char* target_str, int begin, int end);
 void l_03_designing_recursion() {
     int serial_number[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
     int result  = 0;
-//    result      = seq_search_implicit(serial_number, 5, 7);
-//    printf("seq_search_implicit matching case is : %d\n", result);
-//
-//    result      = seq_search_explicit(serial_number, 0, 9, 7);
-//    printf("seq_search_explicit matching case is : %d\n", result);
-//
-//    result      = seq_search_explicit_split(serial_number, 0, 9, 7);
-//    printf("seq_search_explicit_split matching case is : %d\n", result);
-//
-//    result      = find_maximum_numb(serial_number, 0, 9);
-//    printf("find_maximum_numb matching case is : %d\n", result);
+    result      = seq_search_implicit(serial_number, 5, 7);
+    printf("seq_search_implicit matching case is : %d\n", result);
 
+    result      = seq_search_explicit(serial_number, 0, 9, 7);
+    printf("seq_search_explicit matching case is : %d\n", result);
+
+    result      = seq_search_explicit_split(serial_number, 0, 9, 7);
+    printf("seq_search_explicit_split matching case is : %d\n", result);
+
+    result      = find_maximum_numb(serial_number, 0, 9);
+    printf("find_maximum_numb matching case is : %d\n", result);
 
     char* str_arr[] = {"singapore", "japan", "taiwan", "vietnam", "tailland", "indonesia", "malaysia", "korea"};
     char* target_str = "korea";
