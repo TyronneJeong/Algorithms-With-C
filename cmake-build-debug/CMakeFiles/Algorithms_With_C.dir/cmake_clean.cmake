@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "Algorithms_With_C.exe.manifest"
   "Algorithms_With_C.pdb"
   "CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_00_memory.c.obj"
+  "CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_00_pointer.c.obj"
   "CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_01_what_is_recursion.c.obj"
   "CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_02_recursive_thinking.c.obj"
   "CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_03_designing_recursion.c.obj"

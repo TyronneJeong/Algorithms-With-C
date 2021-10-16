@@ -152,6 +152,30 @@ analysis_of_algorithms/l_00_memory.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_00_memory.c.s
 .PHONY : analysis_of_algorithms/l_00_memory.c.s
 
+analysis_of_algorithms/l_00_pointer.obj: analysis_of_algorithms/l_00_pointer.c.obj
+.PHONY : analysis_of_algorithms/l_00_pointer.obj
+
+# target to build an object file
+analysis_of_algorithms/l_00_pointer.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_00_pointer.c.obj
+.PHONY : analysis_of_algorithms/l_00_pointer.c.obj
+
+analysis_of_algorithms/l_00_pointer.i: analysis_of_algorithms/l_00_pointer.c.i
+.PHONY : analysis_of_algorithms/l_00_pointer.i
+
+# target to preprocess a source file
+analysis_of_algorithms/l_00_pointer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_00_pointer.c.i
+.PHONY : analysis_of_algorithms/l_00_pointer.c.i
+
+analysis_of_algorithms/l_00_pointer.s: analysis_of_algorithms/l_00_pointer.c.s
+.PHONY : analysis_of_algorithms/l_00_pointer.s
+
+# target to generate assembly for a file
+analysis_of_algorithms/l_00_pointer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithms_With_C.dir\build.make CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_00_pointer.c.s
+.PHONY : analysis_of_algorithms/l_00_pointer.c.s
+
 analysis_of_algorithms/l_01_what_is_recursion.obj: analysis_of_algorithms/l_01_what_is_recursion.c.obj
 .PHONY : analysis_of_algorithms/l_01_what_is_recursion.obj
 
@@ -308,6 +332,9 @@ help:
 	@echo ... analysis_of_algorithms/l_00_memory.obj
 	@echo ... analysis_of_algorithms/l_00_memory.i
 	@echo ... analysis_of_algorithms/l_00_memory.s
+	@echo ... analysis_of_algorithms/l_00_pointer.obj
+	@echo ... analysis_of_algorithms/l_00_pointer.i
+	@echo ... analysis_of_algorithms/l_00_pointer.s
 	@echo ... analysis_of_algorithms/l_01_what_is_recursion.obj
 	@echo ... analysis_of_algorithms/l_01_what_is_recursion.i
 	@echo ... analysis_of_algorithms/l_01_what_is_recursion.s

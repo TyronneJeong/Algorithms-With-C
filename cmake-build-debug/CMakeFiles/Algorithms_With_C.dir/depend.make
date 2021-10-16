@@ -4,6 +4,9 @@
 CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_00_memory.c.obj: \
  ../analysis_of_algorithms/l_00_memory.c \
  ../analysis_of_algorithms/list.h
+CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_00_pointer.c.obj: \
+ ../analysis_of_algorithms/l_00_pointer.c \
+ ../analysis_of_algorithms/list.h
 CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_01_what_is_recursion.c.obj: \
  ../analysis_of_algorithms/l_01_what_is_recursion.c \
  ../analysis_of_algorithms/list.h

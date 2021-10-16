@@ -12,6 +12,7 @@ add_executable(Algorithms_With_C
         ## Analysis of Algorithms
         analysis_of_algorithms/list.h
         analysis_of_algorithms/l_00_memory.c
+        analysis_of_algorithms/l_00_pointer.c
         analysis_of_algorithms/l_01_what_is_recursion.c
         analysis_of_algorithms/l_02_recursive_thinking.c
         analysis_of_algorithms/l_03_designing_recursion.c

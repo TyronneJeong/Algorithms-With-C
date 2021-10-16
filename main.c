@@ -29,6 +29,7 @@ void student_func(){
  */
 void analysis_of_algorithms(){
 //    l_00_memory();
+//    l_00_pointer();
 //    l_01_what_is_recursion();
 //    l_02_recursive_thinking();
     l_03_designing_recursion();

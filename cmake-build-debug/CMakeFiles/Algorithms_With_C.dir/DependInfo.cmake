@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "D:/Workspace/Algorithms-With-C/analysis_of_algorithms/l_00_memory.c" "D:/Workspace/Algorithms-With-C/cmake-build-debug/CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_00_memory.c.obj"
+  "D:/Workspace/Algorithms-With-C/analysis_of_algorithms/l_00_pointer.c" "D:/Workspace/Algorithms-With-C/cmake-build-debug/CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_00_pointer.c.obj"
   "D:/Workspace/Algorithms-With-C/analysis_of_algorithms/l_01_what_is_recursion.c" "D:/Workspace/Algorithms-With-C/cmake-build-debug/CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_01_what_is_recursion.c.obj"
   "D:/Workspace/Algorithms-With-C/analysis_of_algorithms/l_02_recursive_thinking.c" "D:/Workspace/Algorithms-With-C/cmake-build-debug/CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_02_recursive_thinking.c.obj"
   "D:/Workspace/Algorithms-With-C/analysis_of_algorithms/l_03_designing_recursion.c" "D:/Workspace/Algorithms-With-C/cmake-build-debug/CMakeFiles/Algorithms_With_C.dir/analysis_of_algorithms/l_03_designing_recursion.c.obj"

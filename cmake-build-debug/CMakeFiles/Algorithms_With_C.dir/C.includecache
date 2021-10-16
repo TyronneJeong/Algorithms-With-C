@@ -6,10 +6,8 @@
 
 #IncludeRegexTransform: 
 
-D:/Workspace/Algorithms-With-C/analysis_of_algorithms/l_02_recursive_thinking.c
+D:/Workspace/Algorithms-With-C/analysis_of_algorithms/l_03_designing_recursion.c
 stdio.h
--
-stdlib.h
 -
 string.h
 -

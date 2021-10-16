@@ -79,6 +79,9 @@
 		<Unit filename="D:/Workspace/Algorithms-With-C/analysis_of_algorithms/l_00_memory.c">
 			<Option target="Algorithms_With_C"/>
 		</Unit>
+		<Unit filename="D:/Workspace/Algorithms-With-C/analysis_of_algorithms/l_00_pointer.c">
+			<Option target="Algorithms_With_C"/>
+		</Unit>
 		<Unit filename="D:/Workspace/Algorithms-With-C/analysis_of_algorithms/l_01_what_is_recursion.c">
 			<Option target="Algorithms_With_C"/>
 		</Unit>
